@@ -1,0 +1,125 @@
+body {
+    background-color: #a1b1be; /* Azul claro */
+    color: #060606; /* Blanco para el texto */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .header-container {
+    background-color: #333; /* Fondo oscuro para el encabezado */
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .header-container img {
+    border-radius: 50%; /* Forma circular para la imagen */
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #f1f5f6; /* Azul claro para las tarjetas */
+    border: 1px solid #070a0e;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .card h2 {
+    color: #333; /* Texto oscuro para los títulos de las tarjetas */
+  }
+  
+  .carousel-indicators li {
+    background-color: #333;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(51, 51, 51, 0.7); /* Fondo oscuro semi-transparente para el carrusel */
+    color: #ffffff;
+  }
+  
+  .footer-container {
+    background-color: #000; /* Fondo negro para el pie de página */
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  .footer-container a {
+    color: #ffffff;
+  }
+  
+  .btn-primary {
+    background-color: #333; /* Fondo oscuro para los botones primarios */
+    border: 1px solid #333;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4682b4;
+    border: 1px solid #4682b4;
+  }
+  
+  .container {
+    text-align: left;
+  }
+  
+  .social-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+ 
+  .artist-image {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .artist-image img {
+    border-radius: 50%;  /* Hace que la imagen tenga bordes redondeados */
+    width: 120px;  /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: 120px;  /* Ajusta el tamaño de la imagen según tus preferencias */
+    object-fit: cover;  /* Mantiene la proporción y cubre el círculo */
+    border: 2px solid #87ceeb;  /* Agrega un borde para resaltar el círculo */
+  }
+  
+
+/*line decor*/
+
+.text-center {
+    position: relative;
+  }
+  
+  .line-decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Ajusta la longitud de la línea según tus preferencias */
+    height: 2px; /* Ajusta el grosor de la línea según tus preferencias */
+    background-color: #000; /* Color de la línea (negro en este caso) */
+    z-index: 1; /* Asegura que la línea esté encima del contenido */
+  }
+  
+  
+  
