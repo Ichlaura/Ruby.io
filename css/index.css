@@ -54,7 +54,14 @@ body {
   .footer-container a {
     color: #ffffff;
   }
+  .footer-text {
+    text-align: center;
+  }
   
+  .footer-container p {
+    text-align: center;
+}
+
   .btn-primary {
     background-color: #333; /* Fondo oscuro para los botones primarios */
     border: 1px solid #333;
@@ -158,10 +165,7 @@ body {
     border-radius: 50%;
 }
 
-.text-center {
-    position: relative;
-    z-index: 1;
-}
+
 
 /*grid*/
 
@@ -197,3 +201,34 @@ body {
   margin-bottom: 10px; /* Espacio entre cada imagen y su texto */
 }
 
+
+/*imagenes del segundo grid pero ahora circular de danza*/
+
+.card-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-item {
+  width: auto; /* Permitir que el ancho se ajuste automáticamente según el contenido */
+  max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+}
+
+.project-item img {
+  width: 100%; /* Asegurar que la imagen ocupe todo el ancho disponible */
+  height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la proporción */
+  max-width: none; /* Deshacer cualquier restricción de ancho máximo */
+  max-height: none; /* Deshacer cualquier restricción de altura máxima */
+}
+
+
+.contact-info {
+  text-align: center;
+}
