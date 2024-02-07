@@ -177,7 +177,7 @@ p {
   margin-top: -75px; /* Mitad del valor de la altura del círculo */
   margin-left: -75px; /* Mitad del valor de la anchura del círculo */
   z-index: 1; /* Asegura que el círculo esté encima del texto */
-  border: 5px solid rgb(213, 210, 171); /* Borde sólido de 5px negro */
+  border: 5px solid rgb(61, 106, 120); /* Borde sólido de 5px negro */
   background: linear-gradient(to bottom, #ffffff, #000000); /* Fondo degradado */
   box-shadow: 0 0 20px rgba(83, 127, 127, 0.7); /* Sombra con degradado más visible */
 }
