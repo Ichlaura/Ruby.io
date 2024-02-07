@@ -1,16 +1,31 @@
 body {
-    background-color: #ffffff; /* Azul claro */
-    color: #060606; /* Blanco para el texto */
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-  }
+  background-color: #ffffff; /* Color de fondo */
+  color: #333; /* Color del texto principal */
+  font-family: "Arial", sans-serif; /* Fuente principal */
+  text-align: center; /* Alineación del texto */
+  margin: 0;
+  font-size: 20px; /* Tamaño de la fuente base */
+  line-height: 1.6; /* Altura de línea */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial", sans-serif; /* Fuente para títulos */
+  font-weight: bold; /* Peso de la fuente para títulos */
+}
+
+p {
+  font-size: 20px; /* Tamaño de la fuente para párrafos */
+}
+
+/* Otros estilos específicos pueden agregarse según sea necesario */
+
   
-  .header-container {
-    background-color: #333; /* Fondo oscuro para el encabezado */
-    color: #ffffff;
-    padding: 20px;
-  }
+.header-container {
+  background-color: #000; /* Fondo negro para el encabezado */
+  color: #ffffff;
+  padding: 20px;
+}
+
   
   .header-container img {
     border-radius: 50%; /* Forma circular para la imagen */
@@ -26,7 +41,8 @@ body {
   
   .card {
     background-color: #f1f5f6; /* Azul claro para las tarjetas */
-    border: 1px solid #070a0e;
+    border: 1px solid transparent; /* Borde transparente */
+    box-shadow: 0 0 10px rgba(31, 50, 75, 0.5); /* Sombra con degradado */
     margin-bottom: 20px;
     text-align: left;
     padding: 20px;
@@ -103,12 +119,16 @@ body {
   }
   
   .artist-image img {
-    border-radius: 50%;  /* Hace que la imagen tenga bordes redondeados */
+    border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
     width: 120px;  /* Ajusta el tamaño de la imagen según tus preferencias */
     height: 120px;  /* Ajusta el tamaño de la imagen según tus preferencias */
     object-fit: cover;  /* Mantiene la proporción y cubre el círculo */
-    border: 2px solid #87ceeb;  /* Agrega un borde para resaltar el círculo */
+    border: 6px solid #000;  /* Borde de 6px sólido negro */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra con degradado más visible */
   }
+  
+  
+  
   
 
 /*line decor*/
@@ -146,18 +166,22 @@ body {
 }
 
 .circular-image-container {
-    position: absolute;
-    top: 100%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    overflow: hidden;
-    width: 150px; /* Ajusta el tamaño del círculo según tu diseño */
-    height: 150px; /* Ajusta el tamaño del círculo según tu diseño */
-    margin-top: -75px; /* Mitad del valor de la altura del círculo */
-    margin-left: -75px; /* Mitad del valor de la anchura del círculo */
-    z-index: 1; /* Asegura que el círculo esté encima del texto */
-  }
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px; /* Ajusta el tamaño del círculo según tu diseño */
+  height: 150px; /* Ajusta el tamaño del círculo según tu diseño */
+  margin-top: -75px; /* Mitad del valor de la altura del círculo */
+  margin-left: -75px; /* Mitad del valor de la anchura del círculo */
+  z-index: 1; /* Asegura que el círculo esté encima del texto */
+  border: 5px solid rgb(213, 210, 171); /* Borde sólido de 5px negro */
+  background: linear-gradient(to bottom, #ffffff, #000000); /* Fondo degradado */
+  box-shadow: 0 0 20px rgba(83, 127, 127, 0.7); /* Sombra con degradado más visible */
+}
+
 
 .circular-image {
     width: 100%;
@@ -232,3 +256,13 @@ body {
 .contact-info {
   text-align: center;
 }
+
+.top-line {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
