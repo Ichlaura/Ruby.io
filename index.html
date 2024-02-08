@@ -28,18 +28,7 @@
 <main class="content-wrapper">
     <header class="white-text-container section-container">
      <!-- <div class="top-line"></div>-->
-     <audio autoplay controls>
-      <source src="Images/Beethovens5_ OneRepublic.mp3" type="audio/mp3">
-      <!-- Añade otros elementos source aquí para compatibilidad con diferentes formatos de audio -->
-      Tu navegador no soporta la reproducción de audio.
-    </audio>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var audio = document.querySelector('audio');
-        audio.currentTime = 30; // Cambia 30 por el tiempo (en segundos) desde donde deseas iniciar la reproducción
-      });
-    </script>
-    
+     
     
       <div class="background-image-container">
         <img src="Images/fotofondo2.png" alt="Fondo" class="background-image">
@@ -53,7 +42,8 @@
           <h1>Ruby Nuñez Cala</h1>
           <p>Plastic Artist</p>
         
-         
+        
+          
           <p>
             <a class="fa-icon fa-icon-2x" href="https://facebook.com/" title="">
               <i class="fa fa-facebook"></i>
@@ -65,11 +55,26 @@
               <i class="fa fa-linkedin"></i>
             </a>
           </p>
+       
         </div>
       </header>
       
+      <audio id="myAudio" autoplay controls>
+        <source src="Images/Beethovens5_ OneRepublic.mp3" type="audio/mp3">
+        <!-- Añade otros elementos source aquí para compatibilidad con diferentes formatos de audio -->
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
       
-
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var audio = document.getElementById('myAudio');
+          audio.addEventListener('canplay', function() {
+            audio.currentTime = 34; // Cambia 30 por el tiempo (en segundos) desde donde deseas iniciar la reproducción
+            audio.play(); // Reproducir automáticamente
+          });
+        });
+      </script>
+      
 
 
 <!-- contenido -->  
