@@ -266,3 +266,30 @@ p {
   left: 0;
 }
 
+/*fondo detras de todo*/
+
+/* Agrega un efecto de fondo detrás de todos los elementos */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Asegúrate de que esté detrás de todo */
+  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con opacidad */
+}
+
+/* Mantén tu fondo de imagen actual */
+.background-color-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Asegúrate de que esté detrás de todo */
+  background-image: url('../Images/fondo1.png');
+  background-size: cover;
+  background-position: center;
+}
+
